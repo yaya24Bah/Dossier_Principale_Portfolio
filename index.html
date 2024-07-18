@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-page">
+    
+    <header>
+        <h1>Mon Portfolio</h1>
+    </header> 
+
+    <!-- Section de connexion -->
+    <section id="login">
+        <h2>Se connecter</h2>
+        
+        <div class="login-content">
+            <div id="image">
+                <img src="img/features/f6.png" alt="Description de l'image" class="feature-image">
+            </div>
+            
+            <form id="loginForm">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Se connecter</button>
+                <p id="loginError" style="color: red; display: none;">Nom d'utilisateur ou mot de passe incorrect.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section d'information supplémentaire -->
+    <section id="info">
+        <marquee><p>Voici les informations de connexion : <strong>Nom d'utilisateur :</strong> yayabah <strong>Mot de passe :</strong> yayabah22 </p>
+        </marquee>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mamadou Yaya Bah. Tous droits réservés.</p>
+    </footer>
+    
+    <script src="login_connexion.js"></script>
+</body>
+</html>
