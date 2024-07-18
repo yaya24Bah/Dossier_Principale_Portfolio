@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Simple validation for demonstration purposes
     if (username === 'yayabah' && password === 'yayabah22') {
         alert('Connexion réussie!');
-        window.location.href = 'page_principale.html';  // Redirect to the main page after successful login
+        window.location.href = 'page_principales.html';  // Redirect to the main page after successful login
     } else {
         document.getElementById('loginError').style.display = 'block';
     }
