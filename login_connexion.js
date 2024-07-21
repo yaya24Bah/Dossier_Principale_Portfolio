@@ -12,3 +12,4 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         document.getElementById('loginError').style.display = 'block';
     }
 });
+

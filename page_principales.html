@@ -50,11 +50,17 @@
                 <h3>Baccalauréat, Informatique</h3>
                 <p><em>Août 2019 - Décembre 2023</em></p>
                 <p>Université du Québec à Chicoutimi - Chicoutimi, QC</p>
+                <div class="img-container">
+                    <img src="img/Universite Québéc de Chicoutimi.jpg" alt="Université du Québec à Chicoutimi">
+                </div>
             </div>
             <div class="education">
                 <h3>Certificat, MIAGE (Informatique de gestion)</h3>
                 <p><em>Septembre 2014 - Mai 2016</em></p>
                 <p>Centre Universitaire de Labé - Guinée</p>
+                <div class="img-container">
+                    <img src="img/Universite De Labe.jpg" alt="Centre Universitaire de Labé">
+                </div>
             </div>
             <div class="education">
                 <h3>Diplôme lycée, Sciences Mathématiques</h3>
@@ -63,6 +69,7 @@
             </div>
         </div>
     </section>
+    
     <section id="experience">
         <h2>Expérience</h2>
         <div class="experience-grid">
@@ -139,6 +146,32 @@
         </div>
         <p>&copy; 2024 Mamadou Yaya. Tous droits réservés.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imgContainers = document.querySelectorAll('.img-container');
+        
+            imgContainers.forEach(container => {
+                container.addEventListener('click', function () {
+                    const img = this.querySelector('img');
+                    const zoomedImg = document.createElement('img');
+                    const zoomBg = document.createElement('div');
+        
+                    zoomedImg.src = img.src;
+                    zoomedImg.classList.add('img-zoom');
+                    zoomBg.classList.add('img-zoom-bg');
+        
+                    zoomBg.addEventListener('click', function () {
+                        document.body.removeChild(zoomedImg);
+                        document.body.removeChild(zoomBg);
+                    });
+        
+                    document.body.appendChild(zoomBg);
+                    document.body.appendChild(zoomedImg);
+                });
+            });
+        });
+        </script>
+        
     
     <script src="login_connexion.js"></script>
 </body>
