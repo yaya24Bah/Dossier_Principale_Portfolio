@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
 
   if (isValid) {
     errorMessage.hidden = true;
-    window.location.assign("index.html");
+    window.location.assign("connexion.html");
     return;
   }
 
