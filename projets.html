@@ -1,90 +1,58 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Mamadou Yaya Bah</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Mamadou Yaya Bah</h1>
-        <p>Développeur Informatique | Analyste de Données</p>
-        <nav>
-            <ul>
-                <li><a href="page_principales.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#education">Formation</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="index.html">Connexion</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="projects">
-        <h2>Projets</h2>
-        
-        <article>
-            <h3>Projet 1 : Développement d'un site web e-commerce</h3>
-            <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript, Node.js</p>
-            <p>Création d'un site web pour une boutique en ligne avec des fonctionnalités de panier d'achat, paiement sécurisé, et gestion des produits.</p>
-            <a href="https://github.com/yaya24Bah/Projet_Yaya2024.git" target="_blank">Voir le projet sur GitHub</a>
-        </article>
-        
-        <article>
-            <h3>Projet 2: Application de Metéo</h3>
-                <p> <strong> Description :</strong> Une application web affichant la météo actuelle et les prévisions pour différentes villes.
-                    <strong>Technologies :</strong> HTML, CSS, JavaScript, API météo (comme OpenWeatherMap), éventuellement un framework comme React.<br>
-                    <strong>Fonctionnalités :</strong> Recherche de ville, affichage des conditions météorologiques actuelles, prévisions sur plusieurs jours, géolocalisation. </p>
-        
-                  <p><a href="https://yaya24bah.github.io/Weather_App/" target="_blank">Le lien de l'application</a>
-                </p>
-                <p><a href="https://github.com/yaya24Bah/Weather_App" target="_blank">Le lien du code source sur GitHub</a>
-                </p>
-        </article>
-        
-        <article>
-            <h3>Projet 3: Application de recettes de cuisine</h3>
-                <p> <strong> Description :</strong> Un site web ou une application où les utilisateurs peuvent 
-                     rechercher, publier et commenter des recettes de cuisine.
-                    <strong>Technologies :</strong> HTML, CSS, JavaScript, Node.js, Express, MongoDB.<br>
-                    <strong>Fonctionnalités :</strong> Recherche de recettes, ajout et modification de recettes,
-                     commentaires, système de notation, authentification des utilisateurs.</p>
-                     <p><a href="https://yaya24bah.github.io/Recette_App/" target="_blank">Le lien de l'application</a>
-                     </p>
-        
-                  <p><a href="https://github.com/yaya24Bah/Recette_App" target="_blank">code source sur GitHub</a>
-                </p>
-        </article>
-
-        <article>
-            <h3>Projet 4 : Développement web avec interface de connexion</h3>
-            <p><strong>Technologies utilisées :</strong> Python, Flask</p>
-            <p>Développement d'une application web avec une interface de connexion permettant l'envoi de courriels, l'ajout et la suppression d'utilisateurs, ainsi que la possibilité de liker des posts.</p>
-            <a href="https://github.com/yaya24Bah/Projets_Developpement_web.git" target="_blank">Voir le projet sur GitHub</a>
-        </article>
-
-        <article>
-            <h3>Projet 5 : Analyse des données de l'accéléromètre</h3>
-            <p><strong>Technologies utilisées :</strong> Python, Pandas, Scikit-learn</p>
-            <p>Analyse des données recueillies à partir d’un accéléromètre portable monté sur la poitrine de 15 participants effectuant 7 activités. Le projet vise à la reconnaissance des activités et à l'authentification des personnes à l’aide de modèles de mouvement.</p>
-            <a href="https://github.com/yaya24Bah/Annalyse-de-donnees_Accellometre.git" target="_blank">Voir le projet sur GitHub</a>
-        </article>
-
-        <article>
-            <h3>Projet 6 : Gestion de base de données</h3>
-            <p><strong>Technologies utilisées :</strong> SQL, PostgreSQL</p>
-            <p>Développement et gestion de bases de données, y compris la création de schémas, la gestion des utilisateurs et des permissions, ainsi que l'optimisation des requêtes pour des performances accrues.</p>
-            <a href="https://github.com/yaya24Bah/Base_de_donnees_SQL.git" target="_blank">Voir le projet sur GitHub</a>
-        </article>
-        
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Mamadou Yaya. Tous droits réservés.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projets de Mamadou Yaya Bah en analyse de données et développement.">
+    <title>Projets | Mamadou Yaya Bah</title>
+    <link rel="stylesheet" href="styles.css"></head>
+    <body><nav aria-label="Navigation principale">
+        <div class="nav-container"><a class="logo" href="index.html">Mamadou Yaya <span>Bah</span>
+        </a><ul><li><a href="connexion.html">Connexion</a></li><li>
+            <a href="index.html">Accueil</a></li><li>
+                <a href="projets.html" class="active" aria-current="page">Projets</a></li></ul></div></nav>
+                <main><section><p class="section-label">Réalisations</p><h1>Mes projets</h1>
+                    <p class="intro">Une sélection de projets en Business intelligence, analyse de données et développement logiciel.</p>
+                    <div class="grid-3 projects-grid">
+<article class="card"><h2>Analyse des ventes</h2>
+    <p class="card-meta">Power BI · Power Query · DAX</p>
+    <p>Analyse de données de ventes, nettoyage de sources multiples, modélisation et création de mesures pour suivre les marges et le chiffre d’affaires.</p>
+    <a href="https://github.com/yaya24Bah" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span>
+    </a></article>
+    <article class="card"><h2>Optimisation de bases de données</h2><p class="card-meta">SQL · PostgreSQL</p>
+                            <p>Conception de schémas relationnels, gestion des permissions et amélioration de requêtes lentes.</p>
+                            <a href="https://github.com/yaya24Bah/Base_de_donnees_SQL.git" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span></a>
+                        </article>
+                        <article class="card"><h2>Analyse d’accéléromètre</h2>
+                        <p class="card-meta">Python · Pandas · scikit-learn</p>
+                        <p>Modélisation des mouvements et reconnaissance d’activités pour 15 participants à l’aide de l’apprentissage automatique.</p>
+                        <a href="https://github.com/yaya24Bah/Annalyse-de-donnees_Accellometre.git" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span>
+                        </a></article>
+    <article class="card"><h2>Site de commerce électronique</h2>
+        <p class="card-meta">HTML · CSS · JavaScript · Node.js</p>
+        <p>Création d’une plateforme de commerce électronique avec panier persistant et interface d’administration.</p>
+        <a href="https://github.com/yaya24Bah/Projet_Yaya2024.git" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span>
+        </a></article>
+        <article class="card"><h2>Application météo</h2>
+            <p class="card-meta">HTML · CSS · JavaScript · OpenWeather API</p>
+            <p>Affichage de prévisions météo avec géolocalisation et historique des recherches.</p>
+            <a href="https://github.com/yaya24Bah/Weather_App.git" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span>
+            </a></article>
+            <article class="card"><h2>Application de recettes</h2>
+                <p class="card-meta">MongoDB · Express · Node.js</p>
+                <p>Application de partage de recettes avec authentification, gestion des profils et système d’évaluation.</p>
+                <a href="https://github.com/yaya24Bah/Recette_App.git" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span>
+                </a></article>
+                <article class="card"><h2>Interface Flask et authentification</h2>
+                    <p class="card-meta">Python · Flask · Jinja2</p>
+                    <p>Application côté serveur intégrant la gestion des utilisateurs, les mentions J’aime et l’envoi automatisé de courriels.</p>
+                    <a href="https://github.com/yaya24Bah/Projets_Developpement_web.git" target="_blank" rel="noopener noreferrer" class="card-link">Voir sur GitHub <span aria-hidden="true">→</span>
+                    </a></article>
+                    
+                        
+</div>
+</section>
+</main>
+<footer>
+    <p>© 2026 Mamadou Yaya Bah. Tous droits réservés.</p>
+</footer>
 </body>
 </html>
